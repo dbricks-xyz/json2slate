@@ -1,1 +1,65 @@
-{"route":"POST /serum/markets/","req":{"baseMintPk":"9cinitXdUhExXC9fwH9fS8dyQV1zaWWtAATg3j27xr7E","quoteMintPk":"q4o7duMApRgcJVJFqU4R1GcbtDfi2RoXbJSyQn9u3sx","lotSize":"1","tickSize":"1","ownerPk":"75ErM1QcGjHiPMX7oLsf9meQdGSUs4ZrwS2X8tBpsZhA"},"reqSchema":{"baseMintPk":"string","quoteMintPk":"string","lotSize":"string","tickSize":"string","ownerPk":"string"},"res":[{"ixs":[{"keys":[{"pubkey":"75ErM1QcGjHiPMX7oLsf9meQdGSUs4ZrwS2X8tBpsZhA","isSigner":true,"isWritable":true}],"programId":"11111111111111111111111111111111","data":"00000000c0cc3600000000008401000000000000b9a79a35d09b47c0edb1b5bfc47819465a8689a3982eb934830ed3cc66ae58b4"}],"signers":[{"secretKey":[19]}]}],"resSchema":[{"ixs":[{"keys":[{"pubkey":"string","isSigner":"boolean","isWritable":"boolean"}],"programId":"string","data":"string"}],"signers":[{"secretKey":["number"]}]}]}
+{
+  "route": "POST /serum/markets/",
+  "req": {
+    "baseMintPk": "HgQfasm8em5BfXYRBfkKgFkLQydTK9UvWuP21hYv7Cet",
+    "quoteMintPk": "FhMDEDvG9yrQqcovk9DKwPFgA5Wfo1UAFSotBhAQiiva",
+    "lotSize": "1",
+    "tickSize": "1",
+    "ownerPk": "75ErM1QcGjHiPMX7oLsf9meQdGSUs4ZrwS2X8tBpsZhA"
+  },
+  "reqSchema": {
+    "baseMintPk": "string",
+    "quoteMintPk": "string",
+    "lotSize": "string",
+    "tickSize": "string",
+    "ownerPk": "string"
+  },
+  "res": [
+    {
+      "instructions": [
+        {
+          "keys": [
+            {
+              "pubkey": "75ErM1QcGjHiPMX7oLsf9meQdGSUs4ZrwS2X8tBpsZhA",
+              "isSigner": true,
+              "isWritable": true
+            }
+          ],
+          "programId": "11111111111111111111111111111111",
+          "data": "00000000c0cc3600000000008401000000000000b9a79a35d09b47c0edb1b5bfc47819465a8689a3982eb934830ed3cc66ae58b4"
+        }
+      ],
+      "signers": [
+        {
+          "secretKey": [
+            131
+          ]
+        }
+      ]
+    }
+  ],
+  "resSchema": [
+    {
+      "instructions": [
+        {
+          "keys": [
+            {
+              "pubkey": "string",
+              "isSigner": "boolean",
+              "isWritable": "boolean"
+            }
+          ],
+          "programId": "string",
+          "data": "string"
+        }
+      ],
+      "signers": [
+        {
+          "secretKey": [
+            "number"
+          ]
+        }
+      ]
+    }
+  ]
+}
