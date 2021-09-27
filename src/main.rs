@@ -42,14 +42,14 @@ fn generate_md_file(in_path: &PathBuf) -> String {
     output.push_str("```json\n");
     output.push_str(&format!(
         "{}\n",
-        serde_json::to_string_pretty(&original["req"]).unwrap()
+        serde_json::to_string_pretty(&original["request"]).unwrap()
     ));
     output.push_str("```\n\n");
     // shell
     output.push_str("```shell\n");
     output.push_str(&format!(
         "{}\n",
-        serde_json::to_string_pretty(&original["reqSchema"]).unwrap()
+        serde_json::to_string_pretty(&original["requestSchema"]).unwrap()
     ));
     output.push_str("```\n\n");
     // --------------------------------------- response
@@ -58,14 +58,14 @@ fn generate_md_file(in_path: &PathBuf) -> String {
     output.push_str("```json\n");
     output.push_str(&format!(
         "{}\n",
-        serde_json::to_string_pretty(&original["res"]).unwrap()
+        serde_json::to_string_pretty(&original["response"]).unwrap()
     ));
     output.push_str("```\n\n");
     // shell
     output.push_str("```shell\n");
     output.push_str(&format!(
         "{}\n",
-        serde_json::to_string_pretty(&original["resSchema"]).unwrap()
+        serde_json::to_string_pretty(&original["responseSchema"]).unwrap()
     ));
     output.push_str("```\n");
 
